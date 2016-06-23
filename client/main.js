@@ -25,6 +25,7 @@ import dssAdmin from './modules/dss-admin';
 import weatherMonitoring from './modules/weather-monitoring';
 import monitoring from './modules/monitoring';
 import MdlCoreDeisgn from './modules/mdl-core-design';
+import Dsdinglasan from './modules/dsdinglasan-core';
 
 const context = initContext();
 const app = createApp(context);
@@ -41,9 +42,9 @@ app.loadModule(oldInteractiveMaps);
 app.loadModule(experiment);
 app.loadModule(dss);
 app.loadModule(dssAdmin);
-
 // Load the new ones here
 app.loadModule(MdlCoreDeisgn);
+app.loadModule(Dsdinglasan);
 
 
 // Load routes last.
