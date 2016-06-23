@@ -2,39 +2,41 @@ import React from 'react';
 
 import {useDeps, composeAll, composeWithTracker} from 'mantra-core';
 
-//import { TriSection } from '/client/modules/ui-components-v2';
 import {SectionList} from '/client/modules/ui-components';
 
-import CropSection from './../components/CropSection.jsx';
+import CoreBanner from './../containers/core-banner';
+
+import CoreCropSection from './../containers/core-crop-section';
+
+import WeatherSection from './../components/WeatherSection.jsx';
+
+import ProjectTitleSection from './../components/ProjectTitleSection.jsx';
+
+import CoreProjectSection from './../containers/core-project-section';
 
 const composeLandingPage = ({context}, onData) => {
     const {Meteor, Collections, FlowRouter} = context();
-    const {WeatherStations} = Collections;
+    const sections = [];
 
-    const coresections = [];
+    sections.push(React.createElement(CoreBanner));
+    sections.push(React.createElement(CoreCropSection));
 
-    const crops = [
-    {url: '/images/crops-flat-icons/rice.png', name: 'RICE', ref: '/core-rice'},
-    {url: '/images/crops-flat-icons/corn.png', name: 'CORN', ref: '/core-corn'},
-    {url: '/images/crops-flat-icons/banana.png', name: 'BANANA', ref: '/core-banana'},
-    {url: '/images/crops-flat-icons/coconut.png', name: 'COCONUT', ref: '/core-coconut'},
-    {url: '/images/crops-flat-icons/coffee.png', name: 'COFFEE', ref: '/core-coffee'},
-    {url: '/images/crops-flat-icons/cacao.png', name: 'CACAO', ref: '/core-cacao'}
-  ];
-  /*for(var i=0;i<crops.length;i++){
-    coresections.push(React.createElement(CropSection, {
-        img: crops[i].url,
-        title: crops[i].name,
-        link: crops[i].ref
+    sections.push(React.createElement(WeatherSection, {
+      title: '30-Day Cumulative Rainfall Monitoring + 10 Day Weather Forecast',
+      text: 'Determine when to plant based on the cumulative rainfall and forecasts in your area.',
+      mapUrl: '/images/samplepics/sample-map.png',
+      rainfallchartUrl: '/images/samplepics/generic-case-6-graph.png'
     }));
-  }*/
-  coresections.push(React.createElement(CropSection, {
-      img: '/images/crops-flat-icons/rice.png',
-      title: 'RICE',
-      link: '/'
-  }));
-  console.log(coresections);
-  onData(null, {coresections});
+
+    sections.push(React.createElement(ProjectTitleSection, {
+      title: 'Our Projects',
+      text: 'Project SARAI, which is on anchored on precision agriculture, uses advances on technology to know what, when, and where to plant.',
+      subtext: 'Field photos from PVeluz'
+    }));
+
+    sections.push(React.createElement(CoreProjectSection));
+
+    onData(null, {sections});
 }
 
 export default composeAll(

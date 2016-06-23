@@ -1,8 +1,8 @@
-import actions from './actions';//get sa action/index.js
+// import actions from './actions';
 import routes from './routes';
 
 export default {
-  actions,
-  load: () => null,
-  routes
+    // actions,
+    load: () => null,
+    routes
 };

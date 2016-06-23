@@ -2,7 +2,7 @@ import React from 'react';
 //import highcharts from 'highcharts';
 import classNames from 'classnames';
 
-class CropSection extends React.Component {
+class ProjectTitleSection extends React.Component {
     componentDidMount() {
         if (componentHandler) {
             componentHandler.upgradeDom();
@@ -16,20 +16,17 @@ class CropSection extends React.Component {
     }
 
     render() {
-        const {title, img, link} = this.props;
-        const style = {
-          color: 'black',
-          marginLeft: 25
-        };
+        const {title, text, subtext} = this.props;
         return (
             <div className='mdl-grid'>
-                <div>
-                  <img src={`${img}`} /><br />
-                  <a href={link} style={style}> {title}</a>
+                <div className="mdl-layout">
+                  <h3>{title}</h3>
+                  <h6>{text}</h6>
+                  <h6>{subtext}</h6>
                 </div>
             </div>
         );
     }
 }
 
-export default CropSection;
+export default ProjectTitleSection;
