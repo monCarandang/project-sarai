@@ -32,3 +32,15 @@ if (!DSSSettings.findOne({name: 'weather-last-update'})) {
   })
 }
 
+f (!NavMenu.findOne({module: 'dss'})) {
+  NavMenu.insert({
+    module: 'dss',
+    navs: [
+      { "href" : "/dss/admin/", "label" : "Dashboard" },
+      { "href" : "/dss/admin/modules", "label" : "Modules" },
+      { "href" : "/dss/admin/weather-stations", "label" : "Weather Stations" },
+      { "href" : "/dss/admin/yield-calculator", "label" : "Yield Calculator" }
+    ]
+  });
+}
+
