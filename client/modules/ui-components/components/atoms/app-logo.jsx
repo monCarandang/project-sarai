@@ -9,6 +9,8 @@ class AppTitle extends React.Component {
       <img
         className={className}
         src={src}
+        width= {200}
+        height= {350}
       />
     );
   }
@@ -21,7 +23,7 @@ AppTitle.propTypes = {
 
 AppTitle.defaultProps = {
   classList: [],
-  src: '/images/sarai-white.png'
+  src: '/images/sarai.png'
 };
 
 export default AppTitle;

@@ -3,28 +3,29 @@ import React from 'react';
 import {useDeps, composeAll, composeWithTracker} from 'mantra-core';
 
 import Banner from './../components/Banner.jsx';
-import {SectionList} from '/client/modules/ui-components';
 
 const composeLandingPage = ({context}, onData) => {
     const {Meteor, Collections, FlowRouter} = context();
+    const {LandingData} = Collections;
     const sections = [];
+    const path = 'home.root';
     
-    const banners = [
-      {
-        url: '/images/homepage-slider/Project SARAI.png',
-        text: 'Smarter Farmers, Smarter Agriculture'
+    if (Meteor.subscribe('landing-page', path).ready()) {
+        const landingData = LandingData.find({path}, {limit: 1, sort: {sort: 1}}).fetch()[0];
+        
+        if(landingData){
+             const {title, background, text} = landingData;
+            onData(null, {
+                title,
+                background,
+                text
+            });
+             
+        }
       }
-    ];
-
-    sections.push(React.createElement(Banner, {
-        img: banners[0].url,
-        text: banners[0].text
-    }));
-
-    onData(null, {sections});
 }
 
 export default composeAll(
     composeWithTracker(composeLandingPage),
     useDeps()
-)(SectionList);
+)(Banner);

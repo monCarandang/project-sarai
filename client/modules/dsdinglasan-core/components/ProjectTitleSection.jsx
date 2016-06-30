@@ -17,8 +17,9 @@ class ProjectTitleSection extends React.Component {
 
     render() {
         const {title, text, subtext} = this.props;
+        const noSpacing = classNames('mdl-grid--no-spacing');
         return (
-            <div className='mdl-grid'>
+            <div className={noSpacing}>
                 <div className="mdl-layout">
                   <h3>{title}</h3>
                   <h6>{text}</h6>

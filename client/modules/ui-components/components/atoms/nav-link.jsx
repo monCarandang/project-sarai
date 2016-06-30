@@ -15,10 +15,14 @@ class NavLink extends React.Component {
   render() {
     const {label, href, classList} = this.props;
     const className = classNames('mdl-navigation__link', classList);
+    const style={
+      color: 'gray'
+    };
     return (
       <a
         className={className}
         href={href}
+        style={style}
       >
         {label}
       </a>

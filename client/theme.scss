@@ -3,7 +3,8 @@
 // https://www.materialpalette.com/
 
 $color-primary-dark: #33691e;
-$color-primary: #689f38;
+//$color-primary: #689f38;
+$color-primary: #fff;
 $color-primary-light: #aed581;
 $color-primary-text-dark: #212121;
 $color-primary-text-light: #dcedc8;
@@ -13,7 +14,7 @@ $color-divider-color: #b6b6b6;
 $color-window-background: #fff;
 $color-accent: #aeea00;
 $color-accent-fallback: #c6ff00;
-
+$color-header: #ebebeb;
 * {
   font-family: 'Roboto', 'Helvetica', 'Arial', 'sans-serif';
 }
