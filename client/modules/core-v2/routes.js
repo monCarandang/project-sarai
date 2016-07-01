@@ -26,11 +26,11 @@ export default (injectDeps, context) => {
               path: this.name
             })),
             // function() {
-            //   return React.createElement(...) 
+            //   return React.createElement(...)
             // }
 
             // () => {
-            //   return React.createElement(...) 
+            //   return React.createElement(...)
             // }
 
             // () => (React.createElement(...))
@@ -46,20 +46,20 @@ export default (injectDeps, context) => {
     }
   });
 
-  FlowRouter.route('/login', {
-    name: 'core.login',
-    action(params, queryParams) {
-      Meteor.loginWithPassword('tester', 'tester', (err) => {
-        if (err) {
-          // handle error;
-          // console.log(err);
-        } else {
-          if (queryParams.redirect) FlowRouter.go(queryParams.redirect);
-          else FlowRouter.go('core.root');
-        }
-      });
-    }
-  });
+  // FlowRouter.route('/login', {
+  //   name: 'core.login',
+  //   action(params, queryParams) {
+  //     Meteor.loginWithPassword('tester', 'tester', (err) => {
+  //       if (err) {
+  //         // handle error;
+  //         // console.log(err);
+  //       } else {
+  //         if (queryParams.redirect) FlowRouter.go(queryParams.redirect);
+  //         else FlowRouter.go('core.root');
+  //       }
+  //     });
+  //   }
+  // });
 
   FlowRouter.route('/logout', {
     name: 'core.logout',
