@@ -17,16 +17,17 @@ class CropSection extends React.Component {
 
     render() {
         const {title, img, link} = this.props;
-        const style = {
+        const cropSectionStyle = {
+            textAlign: 'center'
+        }
+        const linkStyle = {
           color: 'black',
-          marginLeft: 25
+          textDecoration: 'none'
         };
         return (
-            <div className='mdl-grid'>
-                <div>
-                  <img src={`${img}`} /><br />
-                  <a href={link} style={style}> {title}</a>
-                </div>
+            <div style={cropSectionStyle}>
+              <img src={`${img}`} /><br />
+              <a href={link} style={linkStyle}> {title}</a>
             </div>
         );
     }

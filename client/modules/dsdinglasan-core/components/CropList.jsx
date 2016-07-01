@@ -30,12 +30,15 @@ class CropList extends React.Component {
     const className = spacing ? classNames('mdl-grid', 'section-list', classList)
       : classNames('mdl-grid', 'section-list', noSpacing, classList);
     const marginstyle = {
-      marginLeft: 30,
-      marginRight: 30
+      textAlign: 'center'
     };
     return (
       <div className={className} style={marginstyle}>
-        {this.renderSections()}
+        <div className="mdl-cell mdl-cell--1-offset-desktop mdl-cell--10-col-desktop mdl-cell-8-col-tablet mdl-cell--4-col-phone">
+          <div className="mdl-grid">
+            {this.renderSections()}
+          </div>
+        </div>
       </div>
     );
   }

@@ -22,8 +22,8 @@ class Banner extends React.Component {
       backgroundPosition: 'center top'
     };*/
     const style = {
-        width: 1300,
-        height: 500
+        width: '100%',
+        height: 'auto'
     };
     return (
       <div>

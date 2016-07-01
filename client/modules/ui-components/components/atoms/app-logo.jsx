@@ -3,14 +3,14 @@ import classNames from 'classnames';
 
 class AppTitle extends React.Component {
   render() {
-    const {src, classList} = this.props;
+    const {src, classList, width, height} = this.props;
     const className = classNames('app-logo', classList);
     return (
       <img
         className={className}
         src={src}
-        width= {200}
-        height= {350}
+        width= {width}
+        height= {height}
       />
     );
   }

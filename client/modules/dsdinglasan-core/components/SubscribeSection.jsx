@@ -21,14 +21,17 @@ class SubscribeSection extends React.Component {
         const {background, icon, title, text, samplename, sampleemail, samplenumber, buttonText, buttonColor} = this.props;
 
         const style = {
-          backgroundImage: `linear-gradient(rgba(0,0,0,0),
-            rgba(0,0,0,0), rgba(0,0,0,0.7)), url(${background})`,
-          backgroundSize: 'cover',
-          backgroundRepeat: 'no-repeat',
-          backgroundPosition: 'center top',
+          //backgroundImage: `linear-gradient(rgba(0,0,0,0),  rgba(0,0,0,0), rgba(0,0,0,0.7)), url(${background})`,
+          background: `url(${background}), no-repeat, center, center, fixed`,
+          // -webkit-background-size: `cover`,
+          // -moz-background-size: `cover`,
+          // -o-background-size: `cover`,
+          backgroundSize: `cover`,
           height: 600,
-          color: 'white'
+          color: 'white',
+          margin: '0px'
         };
+
         const buttonStyle={
           backgroundColor: buttonColor,
           width: 305
