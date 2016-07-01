@@ -22,7 +22,7 @@ class SubscribeSection extends React.Component {
 
         const style = {
           //backgroundImage: `linear-gradient(rgba(0,0,0,0),  rgba(0,0,0,0), rgba(0,0,0,0.7)), url(${background})`,
-          background: `url(${background}), no-repeat, center, center, fixed`,
+          background: `url(${background}) no-repeat center center`,
           // -webkit-background-size: `cover`,
           // -moz-background-size: `cover`,
           // -o-background-size: `cover`,
