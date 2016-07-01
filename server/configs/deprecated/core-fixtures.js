@@ -5,23 +5,14 @@ if (!NavMenu.findOne({module: 'core'})) {
     module: 'core',
     navs: [
       {
-        href: '',
-        label: 'About SARAI',
+        href: 'home.root',
+        label: 'Home',
+        id: 'home-link',
+      },
+      {
+        href: '/about',
+        label: 'About Us',
         id: 'about-sarai-link',
-        links: [
-          {
-            href: 'about.root',
-            label: 'About the Project'
-          },
-          {
-            href: 'about.team',
-            label: 'About the Team'
-          },
-          {
-            href: 'about.partner',
-            label: 'Partner Institutions'
-          }
-        ]
       },
       {
         href: '',
@@ -52,20 +43,17 @@ if (!NavMenu.findOne({module: 'core'})) {
       },
       {
         href: '',
-        label: 'Be Updated',
-        id: 'be-updated-sarai-link',
+        label: 'Planting Dates',
+        id: 'planting-dates-link',
+      },
+      {
+        href: '',
+        label: 'DSS',
+        id: 'dss-link',
         links: [
           {
-            href: 'alerts-and-advisory.root',
-            label: 'Alerts & Advisory'
-          },
-          {
-            href: 'sarai-eskwela.root',
-            label: 'SARAI Eskwela'
-          },
-          {
             href: '',
-            label: 'Subscribe'
+            label: 'Corn Nutrient Expert'
           }
         ]
       },
@@ -76,19 +64,15 @@ if (!NavMenu.findOne({module: 'core'})) {
         links: [
           {
             href: '',
+            label: 'Contact Us'
+          },
+          {
+            href: '',
             label: 'Submit a Story'
           },
           {
             href: '',
-            label: 'Share Data'
-          },
-          {
-            href: '',
             label: 'Join the Discussion'
-          },
-          {
-            href: '',
-            label: 'Feedback'
           }
         ]
       }

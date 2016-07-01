@@ -14,10 +14,15 @@ class AppTitle extends React.Component {
   }
   render() {
     const {title, classList} = this.props;
-    const className = classNames('mdl-layout-title', 'app-title', classList);
+    const className = classNames('mdl-layout-title', 'app-title', 'mdl-navigation__link', classList);
+    const style = {
+      color: '#333333',
+      fontSize: 20,
+      fontWeight: 'bold'
+    };
     return (
       <div className={className}>
-        <a href="/">
+        <a href="/" style={style}>
           {title}
         </a>
       </div>

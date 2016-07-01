@@ -13,10 +13,15 @@ class AppBar extends React.Component {
     }
   }
   render() {
-    const {appTitle, appNav, classList} = this.props;
-    const className = classNames('mdl-layout__header', 'app-bar', classList);
+    const {appTitle, appNav, appHeaderTitle, appHeaderSearch, classList} = this.props;
+    const className = classNames('mdl-layout__header', 'app-header2', classList);
     return (
       <header className={className}>
+        <div className="app-header mdl-layout__header-row">
+          {appHeaderTitle}
+          <div className="mdl-layout-spacer"></div>
+          {appHeaderSearch}
+        </div>
         <div className="mdl-layout__header-row">
           {appTitle}
           <div className="mdl-layout-spacer"></div>

@@ -1,0 +1,19 @@
+.crop-section {
+  width: 100% !important;
+  .crop-section-title-container {
+    height: 250px;
+    .crop-section-title {
+      font-weight: 300;
+      color: white;
+    }
+  }  
+  .crop-section-text {
+    height: 70px;
+    color: black;
+  }
+  .crop-section-actions {
+    .crop-section-action {
+      color: black;
+    }
+  }
+}
