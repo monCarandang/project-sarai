@@ -5,7 +5,7 @@ if (!NavMenu.findOne({module: 'core'})) {
     module: 'core',
     navs: [
       {
-        href: 'home.root',
+        href: '/home',
         label: 'Home',
         id: 'home-link',
       },

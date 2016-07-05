@@ -45,33 +45,39 @@ if (!LandingData.findOne({path: 'sarai-eskwela.root'})) {
     share: [
         {
             title: 'facebook',
-            class_name: 'facebook',
-            href: 'http://www.facebook.com/sharer.php?u=http://sarai.ph/?tcsn_portfolio=sarai-eskwela'
+            class_name: 'fb',
+            href: 'http://www.facebook.com/sharer.php?u=http://sarai.ph/?tcsn_portfolio=sarai-eskwela',
+            img: '/images/icons/fb.png'
         },
         {
             title: 'twitter',
-            class_name: 'twitter',
-            href: 'http://twitter.com/home?status=SARAI%20Eskwela%20http://sarai.ph/?tcsn_portfolio=sarai-eskwela'
+            class_name: 'twt',
+            href: 'http://twitter.com/home?status=SARAI%20Eskwela%20http://sarai.ph/?tcsn_portfolio=sarai-eskwela',
+            img: '/images/icons/twitter.png'
         },
         {
             title: 'googleplus',
-            class_name: 'googleplus',
-            href: 'http://google.com/bookmarks/mark?op=edit&bkmk=http://sarai.ph/?tcsn_portfolio=sarai-eskwela'
+            class_name: 'gp',
+            href: 'http://google.com/bookmarks/mark?op=edit&bkmk=http://sarai.ph/?tcsn_portfolio=sarai-eskwela',
+            img: '/images/icons/googleplus.png'
         },
         {
             title: 'linkedin',
-            class_name: 'linkedin',
-            href: 'http://linkedin.com/shareArticle?url=http://sarai.ph/?tcsn_portfolio=sarai-eskwela'
+            class_name: 'li',
+            href: 'http://linkedin.com/shareArticle?url=http://sarai.ph/?tcsn_portfolio=sarai-eskwela',
+            img: '/images/icons/linkedin.png'
         },
         {
             title: 'pinterest',
-            class_name: 'pinterest',
-            href: 'http://pinterest.com/pin/create/button/?url=http%3A%2F%2Fsarai.ph%2F%3Ftcsn_portfolio%3Dsarai-eskwela&description=SARAI%20Eskwela&media=http%3A%2F%2Fsarai.ph%2Fwp-content%2Fuploads%2F2016%2F02%2Fsarai-eskwela-copy-1.jpg'
+            class_name: 'pnt',
+            href: 'http://pinterest.com/pin/create/button/?url=http%3A%2F%2Fsarai.ph%2F%3Ftcsn_portfolio%3Dsarai-eskwela&description=SARAI%20Eskwela&media=http%3A%2F%2Fsarai.ph%2Fwp-content%2Fuploads%2F2016%2F02%2Fsarai-eskwela-copy-1.jpg',
+            img: '/images/icons/pinterest.png'
         },
         {
             title: 'mail',
-            class_name: 'mail',
-            href: 'mailto:?subject=SARAI%20Eskwela&body=http://sarai.ph/?tcsn_portfolio=sarai-eskwela'
+            class_name: 'ml',
+            href: 'mailto:?subject=SARAI%20Eskwela&body=http://sarai.ph/?tcsn_portfolio=sarai-eskwela',
+            img: '/images/icons/mail.png'
         }
     ],
     prevName: 'Alerts and Advisories',

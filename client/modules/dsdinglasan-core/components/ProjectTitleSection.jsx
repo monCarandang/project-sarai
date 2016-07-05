@@ -20,6 +20,7 @@ class ProjectTitleSection extends React.Component {
         const noSpacing = classNames('mdl-grid--no-spacing');
         return (
             <div className={noSpacing}>
+                <hr />
                 <div className="mdl-layout">
                   <h3>{title}</h3>
                   <h6>{text}</h6>

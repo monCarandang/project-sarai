@@ -17,12 +17,21 @@ class Paragraph extends React.Component {
 
     render() {
         const {title, text} = this.props;
-        return (
-            <div>
-                <h4>{title}</h4>
-                <p>{text}</p>
-            </div>
-        );
+        if(title!=''){
+            return (
+                <div>
+                    <h4>{title}</h4>
+                    <hr className='hrGreen'/>
+                    <p>{text}</p>
+                </div>
+            );
+        }
+        else{
+            return(
+                <div>
+                </div>
+            );
+        }
     }
 }
 

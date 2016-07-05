@@ -58,7 +58,9 @@ class PreFooter extends React.Component {
             }
         }
     }
-
+    handleClick(link) {
+        //window.location = {link};
+    }
     renderShare() {
       const {share} = this.props;
       return share.map((each, key) => {
@@ -69,6 +71,7 @@ class PreFooter extends React.Component {
                 className={each.class_name}
                 title={each.title}
                 key={key}>
+                <img src={each.img} className='logoClass' />
                 </a>
             </li>
         );

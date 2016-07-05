@@ -8,8 +8,19 @@
     text-decoration: none;
 }
 
-.facebook {
-	background-image: 'url("/images/Services/alerts-and-advisories.jpg")';
-	background-repeat: 'no-repeat';
-	background-size: 'contain';
+.fb:link, .twt:link, .gp:link, .li:link, .pnt:link, .ml:link, .fb:visited, .twt:visited, .gp:visited, .li:visited, .pnt:visited, .ml:visited {
+	border-radius: 50%;
+	border: 1px solid transparent;
+	background-color: #E1E1E1;
+}
+
+.fb:hover, .twt:hover, .gp:hover, .li:hover, .pnt:hover, .ml:hover, .fb:active, .twt:active, .gp:active, .li:active, .pnt:active, .ml:active {
+	border-radius: 50%;
+	border: 1px solid transparent;
+	background-color: #59B060;
+}
+
+.logoClass{
+	width: 25px;
+	height: 25px;
 }

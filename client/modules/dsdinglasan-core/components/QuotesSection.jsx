@@ -36,6 +36,7 @@ class QuotesSection extends React.Component {
             <div className='mdl-grid' style={marginstyle}>
               <div className="mdl-cell mdl-cell--12-col">
               <h3>{title}</h3>
+              <hr />
               </div>
                 {this.renderQuotes()}
                 <div className="mdl-cell mdl-cell--3-col">
