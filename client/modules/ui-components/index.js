@@ -28,6 +28,7 @@ import _BannerEditor from './components/organisms/banner-editor.jsx';
 import _FooterSection from './components/organisms/footer-section.jsx';
 
 import _Landing from './components/templates/landing.jsx';
+import _ServicesPage from './components/templates/services-page.jsx';
 import _MapPage from './components/templates/map-page.jsx';
 import _DSSAdmin from './components/templates/dss-admin.jsx';
 
@@ -50,6 +51,7 @@ export const IconGroup = _IconGroup;
 export const NavLink = _NavLink;
 export const NavList = _NavList;
 export const Landing = _Landing;
+export const ServicesPage = _ServicesPage;
 export const MapPage = _MapPage;
 export const DSSAdmin = _DSSAdmin;
 export const QuadSection = _QuadSection;

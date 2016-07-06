@@ -14,7 +14,7 @@ import CoreProjectSection from './../containers/core-project-section';
 
 import CoreReportSection from './../containers/core-report-section';
 
-import CoreSubscribeSection from './../containers/core-subscribe-section';
+//import CoreSubscribeSection from './../containers/core-subscribe-section';
 
 import CoreBlogSection from './../containers/core-blog-section';
 
@@ -39,7 +39,7 @@ const composeLandingPage = ({context}, onData) => {
 
     sections.push(React.createElement(CoreReportSection));
 
-    sections.push(React.createElement(CoreSubscribeSection));
+    //sections.push(React.createElement(CoreSubscribeSection));
 
     sections.push(React.createElement(CoreBlogSection));
 

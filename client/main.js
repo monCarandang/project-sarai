@@ -26,7 +26,7 @@ import weatherMonitoring from './modules/weather-monitoring';
 import monitoring from './modules/monitoring';
 import MdlCoreDeisgn from './modules/mdl-core-design';
 import Dsdinglasan from './modules/dsdinglasan-core';
-
+import Services from './modules/services';
 const context = initContext();
 const app = createApp(context);
 
@@ -45,7 +45,7 @@ app.loadModule(dssAdmin);
 // Load the new ones here
 app.loadModule(MdlCoreDeisgn);
 app.loadModule(Dsdinglasan);
-
+app.loadModule(Services);
 
 // Load routes last.
 app.init();
