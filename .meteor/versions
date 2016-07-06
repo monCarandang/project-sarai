@@ -90,6 +90,8 @@ standard-minifiers@1.0.3-beta.11
 static-html@1.0.4-beta.11
 templating@1.1.6-beta.11
 templating-tools@1.0.1-beta.11
+tomi:upload-jquery@2.4.0
+tomi:upload-server@1.3.4
 tracker@1.0.10-beta.11
 ui@1.0.8
 underscore@1.0.5-beta.11

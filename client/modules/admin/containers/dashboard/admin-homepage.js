@@ -9,7 +9,7 @@ const deps = (context, actions) => ({
 
 const composer = ({context}, onData) => {
 
-  onData(null, {sample: 'sample'});
+  onData(null, {});
 };
 
 export default composeAll(
