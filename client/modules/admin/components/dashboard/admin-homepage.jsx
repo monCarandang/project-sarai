@@ -1,4 +1,5 @@
 import React from 'react';
+import {Uploader} from 'meteor/tomi:upload-jquery'
 
 class AdminHomepage extends React.Component {
   constructor() {
@@ -6,7 +7,6 @@ class AdminHomepage extends React.Component {
     this.handleUpload = this.handleUpload.bind(this)
     this.startUpload = this.startUpload.bind(this)
     this.$ = $
-    find = find.bind(this)
     this.find = find.bind(this)
   }
   componentWillMount() {
@@ -16,7 +16,7 @@ class AdminHomepage extends React.Component {
     if (componentHandler) {
       componentHandler.upgradeDom();
     }
-
+    console.log(Uploader)
     Uploader.render.call(this)
   }
   componentDidUpdate() {
@@ -26,13 +26,11 @@ class AdminHomepage extends React.Component {
   }
 
   startUpload(event) {
-    // console.log(event.target)
     console.log('starting upload...')
     Uploader.startUpload.call()
   }
 
   handleUpload(event) {
-    // this.props.callback()
     console.log('handling upload...')
     if (this.formData) {
       this.formData['contentType'] = this.contentType
