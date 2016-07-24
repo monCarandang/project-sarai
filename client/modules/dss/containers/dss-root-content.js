@@ -37,15 +37,15 @@ const composerLandingPage = ({context}, onData) => {
 
     const customModules = React.createElement(CustomModules, {spacing})
 
-    const mraMinorHeader = React.createElement(MinorHeader, {title: 'CUMULATIVE RAINFALL', helpText: 'This section is a series of advisories based on the cumulative rainfall in your area.', id: 'mra'})
+    const mraMinorHeader = React.createElement(MinorHeader, {title: 'CUMULATIVE RAINFALL', helpText: 'Select a location on the map to see its cumulative rainfall for the past 30 days, as well as related crop advisories.', id: 'mra'})
 
     sections.push(React.createElement(DSSLayout, {customModules, spacing, minorHeader: mraMinorHeader}))
 
-    const ycMinorHeader = React.createElement(MinorHeader, {title: 'YIELD CALCULATOR', helpText: 'The Yield calculator uses weather data averages of the past week to predict the yield of your crops if they were planted this week. Please provide a solar radiation reading. Values are usually within the range of  13 to 23 MJ', id: 'yc'})
+    /*const ycMinorHeader = React.createElement(MinorHeader, {title: 'YIELD CALCULATOR', helpText: 'The Yield calculator uses weather data averages of the past week to predict the yield of your crops if they were planted this week. Please provide a solar radiation reading. Values are usually within the range of  13 to 23 MJ', id: 'yc'})
 
     sections.push(React.createElement(YieldCalculator, {
       minorHeader: ycMinorHeader})
-    )
+    )*/
 
     // const smMinorHeader = React.createElement(MinorHeader, {title: 'SOIL MOISTURE MONITORING', helpText: 'This section calculates the soil moisture deficit for the past 30 days. The assumption is that the deficit starts at baseline 0'})
 
