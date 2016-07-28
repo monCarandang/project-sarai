@@ -1,4 +1,7 @@
 import React from 'react';
+import highcharts from 'highcharts/highstock';
+require('highcharts/modules/exporting')(highcharts)
+require('highcharts/highcharts-more')(highcharts)
 
 class Meteogram extends React.Component {
   constructor() {

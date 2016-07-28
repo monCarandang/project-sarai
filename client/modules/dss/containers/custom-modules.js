@@ -97,6 +97,7 @@ const TCSRedux = ({context}, onData) => {
         const utcDate = Date.UTC(entry.date.year, entry.date.month, entry.date.day);
 
         totalRainfall += entry.data.rainfall
+        totalRainfall = Math.round(totalRainfall * 100) / 100
 
         pastRainfall.push({x: utcDate, y: entry.data.rainfall})
         accumulatedRainfall.push({x: utcDate, y: totalRainfall})

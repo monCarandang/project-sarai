@@ -7,3 +7,5 @@
 sarai:lib
 # meteortoys:allthings
 reactive-var
+tomi:upload-server
+tomi:upload-jquery
