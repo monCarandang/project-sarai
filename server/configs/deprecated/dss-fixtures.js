@@ -1,4 +1,4 @@
-import {DSSSettings} from '/lib/collections';
+import {DSSSettings, NavMenu} from '/lib/collections';
 
 if (!DSSSettings.findOne({name: 'wunderground-api-key'})) {
   DSSSettings.insert({
@@ -32,7 +32,7 @@ if (!DSSSettings.findOne({name: 'weather-last-update'})) {
   })
 }
 
-f (!NavMenu.findOne({module: 'dss'})) {
+if (!NavMenu.findOne({module: 'dss'})) {
   NavMenu.insert({
     module: 'dss',
     navs: [
